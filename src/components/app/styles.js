@@ -12,7 +12,7 @@ injectGlobal`
 export const mainTheme = {
   background: "white",
   foreground: "#21252b",
-  accent: "#21252b",
+  accent: "orange",
 }
 
 export const Background = styled.div`
@@ -28,13 +28,4 @@ export const Background = styled.div`
   //
   // display: flex;
   // flex-direction: column;
-`
-
-export const TextArea = styled.textarea`
-  height: 500px;
-  width: 500px;
-  resize: none;
-  border: none;
-  outline: none;
-  background: ${props => props.theme.background};
 `
