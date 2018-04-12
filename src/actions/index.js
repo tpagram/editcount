@@ -1,7 +1,7 @@
 // Actions
-export const START_DRAFT = 'change_mode'
-export const FINISH_DRAFT = 'change_mode'
-export const FINISH_EDIT = 'change_mode'
+export const START_DRAFT = 'START_DRAFT'
+export const FINISH_DRAFT = 'FINISH_DRAFT'
+export const FINISH_EDIT = 'FINISH_EDIT'
 
 // Other constants
 export const EditModes = {
@@ -10,7 +10,7 @@ export const EditModes = {
   COMPLETE: 'complete'
 }
 
-export function changeMode(currentMode) {
+export const changeMode = currentMode => {
   switch (currentMode) {
     case 'draft':
       return { type: FINISH_DRAFT }
