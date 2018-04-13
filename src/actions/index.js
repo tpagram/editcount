@@ -2,6 +2,7 @@
 export const START_DRAFT = 'START_DRAFT'
 export const FINISH_DRAFT = 'FINISH_DRAFT'
 export const FINISH_EDIT = 'FINISH_EDIT'
+export const UPDATE_EDITOR_STATE = 'UPDATE_EDITOR_STATE'
 
 // Other constants
 export const EditModes = {
@@ -22,3 +23,8 @@ export const changeMode = currentMode => {
       return
   }
 }
+
+export const updateEditorState = editorState => ({
+  type: FINISH_DRAFT,
+  editorState
+})
